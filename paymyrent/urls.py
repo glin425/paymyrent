@@ -17,9 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls.static import static
 
+from app import views
 from paymyrent.settings import DEBUG, STATIC_URL, MEDIA_ROOT, STATIC_ROOT, MEDIA_URL
 
 urlpatterns = [
+    url(r'^$', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
 ]
 
