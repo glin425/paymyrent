@@ -15,15 +15,17 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.conf.urls.static import static
+
+from paymyrent.settings import DEBUG, STATIC_URL, MEDIA_ROOT, STATIC_ROOT, MEDIA_URL
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
 
 
-# hey!!!
+urlpatterns += static(STATIC_URL, document_root=STATIC_ROOT)
 
-# testing
-
-#testing another!
+if DEBUG:
+    urlpatterns += static(MEDIA_URL, document_root=MEDIA_ROOT)
 
