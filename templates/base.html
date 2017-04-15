@@ -1,0 +1,250 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+{%  include 'elements/head.html'%}
+
+<body class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-fullscreen">
+<!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
+<!-- BEGIN: HEADER -->
+{%  include 'elements/header.html' %}
+<!-- END: HEADER -->
+<!-- END: LAYOUT/HEADERS/HEADER-1 -->
+
+<!-- BEGIN: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
+<nav class="c-layout-quick-sidebar">
+    <div class="c-header">
+        <button type="button" class="c-link c-close">
+            <i class="icon-login"></i>
+        </button>
+    </div>
+    <div class="c-content">
+        <div class="c-section">
+            <h3>Theme Colors</h3>
+            <div class="c-settings">
+                <span class="c-color c-default c-active" data-color="default"></span>
+                <span class="c-color c-green1" data-color="green1"></span>
+                <span class="c-color c-green2" data-color="green2"></span>
+                <span class="c-color c-green3" data-color="green3"></span>
+                <span class="c-color c-yellow1" data-color="yellow1"></span>
+                <span class="c-color c-yellow2" data-color="yellow2"></span>
+                <span class="c-color c-yellow3" data-color="yellow3"></span>
+                <span class="c-color c-red1" data-color="red1"></span>
+                <span class="c-color c-red2" data-color="red2"></span>
+                <span class="c-color c-red3" data-color="red3"></span>
+                <span class="c-color c-purple1" data-color="purple1"></span>
+                <span class="c-color c-purple2" data-color="purple2"></span>
+                <span class="c-color c-purple3" data-color="purple3"></span>
+                <span class="c-color c-blue1" data-color="blue1"></span>
+                <span class="c-color c-blue2" data-color="blue2"></span>
+                <span class="c-color c-blue3" data-color="blue3"></span>
+                <span class="c-color c-brown1" data-color="brown1"></span>
+                <span class="c-color c-brown2" data-color="brown2"></span>
+                <span class="c-color c-brown3" data-color="brown3"></span>
+                <span class="c-color c-dark1" data-color="dark1"></span>
+                <span class="c-color c-dark2" data-color="dark2"></span>
+                <span class="c-color c-dark3" data-color="dark3"></span>
+            </div>
+        </div>
+        <div class="c-section">
+            <h3>Header Type</h3>
+            <div class="c-settings">
+                <input type="button" class="c-setting_header-type btn btn-sm c-btn-square c-btn-border-1x c-btn-white c-btn-sbold c-btn-uppercase active" data-value="boxed" value="boxed" />
+                <input type="button" class="c-setting_header-type btn btn-sm c-btn-square c-btn-border-1x c-btn-white c-btn-sbold c-btn-uppercase" data-value="fluid" value="fluid" /> </div>
+        </div>
+        <div class="c-section">
+            <h3>Header Mode</h3>
+            <div class="c-settings">
+                <input type="button" class="c-setting_header-mode btn btn-sm c-btn-square c-btn-border-1x c-btn-white c-btn-sbold c-btn-uppercase active" data-value="fixed" value="fixed" />
+                <input type="button" class="c-setting_header-mode btn btn-sm c-btn-square c-btn-border-1x c-btn-white c-btn-sbold c-btn-uppercase" data-value="static" value="static" /> </div>
+        </div>
+        <div class="c-section">
+            <h3>Mega Menu Style</h3>
+            <div class="c-settings">
+                <input type="button" class="c-setting_megamenu-style btn btn-sm c-btn-square c-btn-border-1x c-btn-white c-btn-sbold c-btn-uppercase active" data-value="dark" value="dark" />
+                <input type="button" class="c-setting_megamenu-style btn btn-sm c-btn-square c-btn-border-1x c-btn-white c-btn-sbold c-btn-uppercase" data-value="light" value="light" /> </div>
+        </div>
+        <div class="c-section">
+            <h3>Font Style</h3>
+            <div class="c-settings">
+                <input type="button" class="c-setting_font-style btn btn-sm c-btn-square c-btn-border-1x c-btn-white c-btn-sbold c-btn-uppercase active" data-value="default" value="default" />
+                <input type="button" class="c-setting_font-style btn btn-sm c-btn-square c-btn-border-1x c-btn-white c-btn-sbold c-btn-uppercase" data-value="light" value="light" /> </div>
+        </div>
+        <div class="c-section">
+            <h3>Reading Style</h3>
+            <div class="c-settings">
+                <a href="http://www.themehats.com/themes/jango/" class="c-setting_font-style btn btn-sm c-btn-square c-btn-border-1x c-btn-white c-btn-sbold c-btn-uppercase active">LTR</a>
+                <a href="http://www.themehats.com/themes/jango/rtl/" class="c-setting_font-style btn btn-sm c-btn-square c-btn-border-1x c-btn-white c-btn-sbold c-btn-uppercase ">RTL</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- END: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
+<!-- BEGIN: PAGE CONTAINER -->
+<div class="c-layout-page">
+    <!-- BEGIN: PAGE CONTENT -->
+    {% block content %}{% endblock %}
+    <!-- END: PAGE CONTENT -->
+</div>
+<!-- END: PAGE CONTAINER -->
+<!-- BEGIN: LAYOUT/FOOTERS/FOOTER-6 -->
+<a name="footer"></a>
+<footer class="c-layout-footer c-layout-footer-6 c-bg-grey-1">
+    <div class="container">
+        <div class="c-prefooter c-bg-white">
+            <div class="c-head">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="c-left">
+                            <div class="socicon">
+                                <a href="#" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-facebook tooltips" data-original-title="Facebook" data-container="body"></a>
+                                <a href="#" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-twitter tooltips" data-original-title="Twitter" data-container="body"></a>
+                                <a href="#" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-youtube tooltips" data-original-title="Youtube" data-container="body"></a>
+                                <a href="#" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-tumblr tooltips" data-original-title="Tumblr" data-container="body"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="c-right">
+                            <h3 class="c-title c-font-uppercase c-font-bold">Download Mobile App</h3>
+                            <div class="c-icons">
+                                <a href="#" class="c-font-30 c-font-green-1 socicon-btn c-bg-grey-1-hover socicon-android tooltips" data-original-title="Android" data-container="body"></a>
+                                <a href="#" class="c-font-30 c-font-grey-3 socicon-btn c-bg-grey-1-hover socicon-apple tooltips" data-original-title="Apple" data-container="body"></a>
+                                <a href="#" class="c-font-30 c-font-blue-3 socicon-btn c-bg-grey-1-hover socicon-windows tooltips" data-original-title="Windows" data-container="body"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-line"></div>
+            <div class="c-body">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="c-links c-theme-ul">
+                            <li>
+                                <a href="#">About Jango</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Delivery</a>
+                            </li>
+                            <li>
+                                <a href="#">Promotions</a>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
+                            </li>
+                        </ul>
+                        <ul class="c-links c-theme-ul">
+                            <li>
+                                <a href="#">Blogs</a>
+                            </li>
+                            <li>
+                                <a href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Clients</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Features</a>
+                            </li>
+                            <li>
+                                <a href="#">Stats</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-xs-12">
+                        <div class="c-content-title-1 c-title-md">
+                            <h3 class="c-title c-font-uppercase c-font-bold">Latest Tweets</h3>
+                            <div class="c-line-left hide"></div>
+                        </div>
+                        <div class="c-twitter">
+                            <a class="twitter-timeline" href="https://twitter.com/themehats" data-tweet-limit="2" data-chrome="noheader nofooter noscrollbar noborders transparent"> Loading tweets by @themehats... </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="c-content-title-1 c-title-md">
+                            <h3 class="c-title c-font-uppercase c-font-bold">Contact Us</h3>
+                            <div class="c-line-left hide"></div>
+                        </div>
+                        <p class="c-address c-font-16"> 25, Lorem Lis Street, Orange
+                            <br/> California, US
+                            <br/> Phone: 800 123 3456
+                            <br/> Fax: 800 123 3456
+                            <br/> Email:
+                            <a href="mailto:info@jango.com">
+                                <span class="c-theme-color">info@jango.com</span>
+                            </a>
+                            <br/> Skype:
+                            <a href="#">
+                                <span class="c-theme-color">jango</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="c-line"></div>
+            <div class="c-foot">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="c-content-title-1 c-title-md">
+                            <h3 class="c-font-uppercase c-font-bold">About
+                                <span class="c-theme-font">JANGO</span>
+                            </h3>
+                            <div class="c-line-left hide"></div>
+                        </div>
+                        <p class="c-text c-font-16 c-font-regular">Tolerare unus ducunt ad brevis buxum. Est alter buxum, cesaris. Eheu, lura! Racanas crescere in emeritis oenipons! Ubi est rusticus repressor? Lixa grandis clabulare est. Eposs tolerare.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="c-content-title-1 c-title-md">
+                            <h3 class="c-font-uppercase c-font-bold">Subscribe to Newsletter</h3>
+                            <div class="c-line-left hide"></div>
+                        </div>
+                        <div class="c-line-left hide"></div>
+                        <form action="#">
+                            <div class="input-group input-group-lg c-square">
+                                <input type="text" class="form-control c-square c-font-grey-3 c-border-grey c-theme" placeholder="Your Email Here" />
+                                <span class="input-group-btn">
+                                    <button class="btn c-theme-btn c-theme-border c-btn-square c-btn-uppercase c-font-16" type="button">Subscribe</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-postfooter c-bg-dark-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 c-col">
+                    <p class="c-copyright c-font-grey">2015 &copy; JANGO
+                        <span class="c-font-grey-3">All Rights Reserved.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END: LAYOUT/FOOTERS/FOOTER-6 -->
+
+<div class="c-layout-go2top">
+    <i class="icon-arrow-up"></i>
+</div>
+
+{% include 'elements/modals.html' %}
+{% include 'elements/scripts.html' %}
+</body>
+</html>
