@@ -28,3 +28,26 @@
   right: 10px;
   left: auto;
 }
+
+
+.c-layout-header.c-layout-header-2{
+    background: rgba(30, 36, 42, 0.70);
+}
+.c-theme-nav li.c-active > a:not(.btn){
+    color:#3498db !important
+}
+
+.c-theme-nav li:focus > a:not(.btn), .c-theme-nav li:active > a:not(.btn), .c-theme-nav li:hover > a:not(.btn){
+    color:#3498db !important
+}
+
+.rev_slider .tp-caption p, .rev_slider .caption p{
+    background: rgba(30, 36, 42, 0.83);
+    padding:0.8em;
+    color:#ffffff;
+    margin-top:20px!important;
+
+}
+.tp-caption .c-action-btn{
+    margin-top:45px!important;
+}

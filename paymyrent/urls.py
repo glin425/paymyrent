@@ -23,6 +23,10 @@ from paymyrent.settings import DEBUG, STATIC_URL, MEDIA_ROOT, STATIC_ROOT, MEDIA
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
+    url(r'^residents$', views.residents, name='residents'),
+    url(r'^property-managers$', views.propertymanagers, name='property-managers'),
+    url(r'^landlords$', views.landlords, name='landlords'),
+    url(r'^pricing', views.pricing, name='pricing'),
 ]
 
 

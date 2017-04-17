@@ -44,3 +44,38 @@ def index(request):
     data = {'title': 'Welcome to Pay My Rent'}
     addGlobalData(request, data)
     return render(request, 'index.html', data)
+
+
+def residents(request):
+    """
+        residents information page
+    """
+    data = {'title': 'PayMyRent - Residents Overview'}
+    addGlobalData(request, data)
+    return render(request, 'overviews/residents.html', data)
+
+
+def propertymanagers(request):
+    """
+        property managers information page
+    """
+    data = {'title': 'PayMyRent - Property Managers Overview'}
+    addGlobalData(request, data)
+    return render(request, 'overviews/property-managers.html', data)
+
+def landlords(request):
+    """
+        landlords information page
+    """
+    data = {'title': 'PayMyRent - Landlords Overview'}
+    addGlobalData(request, data)
+    return render(request, 'overviews/landlords.html', data)
+
+
+def pricing(request):
+    """
+        pricing information page
+    """
+    data = {'title': 'PayMyRent - Pricing Overview'}
+    addGlobalData(request, data)
+    return render(request, 'overviews/pricing.html', data)
